@@ -15,16 +15,9 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - {name: 距离下次重置剩余：7 天, server: 0.0.0.0, port: 10000, type: trojan, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, sni: 0.0.0.0, udp: true}
-  - {name: 🇭🇰 香港 » udpn游戏专线 6x, server: zf-aws-hk.goodp.cc, port: 30013, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港 » 莞港游戏专线 6x, server: lpic-cmi-hk01.goodp.cc, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港 » 广港游戏专线 6x, server: node0516.onenode.top, port: 24007, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇯🇵 日本 » 沪日游戏专线 6x, server: lpic-cmi-jp01.goodp.cc, port: 30013, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇯🇵 日本 » udpn游戏专线 6x, server: lpic-cmi-jp02.goodp.cc, port: 30014, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇯🇵 日本 » udpn专线 6x, server: lpic-udpn-jp01.goodp.cc, port: 30016, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇭🇰 香港 » udpn专线 6x, server: lpic-cmi-hk04.goodp.cc, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇸🇬 新加坡 » iplc专线 6x, server: lpic-cmi-hk02.goodp.cc, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇨🇳 台湾 » udpn专线 6x, server: lpic-cmi-hk03.goodp.cc, port: 30012, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港A, server: hrsh-55zf.martinas.shop, port: 34486, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港B, server: hkb.martinas.shop, port: 20220, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港C, server: gg3.martinas.shop, port: 20230, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
@@ -33,7 +26,7 @@ proxies:
   - {name: 🇭🇰 香港F, server: hk-g.ciyy-2022.top, port: 35224, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港G, server: hg.martinas.shop, port: 28612, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港H, server: azhk-zf02.ciyy-2022.top, port: 38604, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇭🇰 香港I » HKT家宽, server: hkt-k.goodp.top, port: 10056, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
+  - {name: 🇭🇰 香港I, server: hkt-k.goodp.top, port: 10056, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇨🇳 台湾A, server: taiwana-gg55zf.martinas.shop, port: 10051, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇨🇳 台湾B, server: taiwan-zf.ciyy-2022.top, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇨🇳 台湾C, server: tw-d.martinas.shop, port: 30032, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
@@ -41,7 +34,6 @@ proxies:
   - {name: 🇸🇬 新加坡B, server: oracle-zfsg-b1.ciyy-2022.top, port: 45413, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇸🇬 新加坡C, server: wanjp-55zf.martinas.shop, port: 28602, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇸🇬 新加坡D, server: sgc-iepl.martinas.shop, port: 28608, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇸🇬 新加坡E, server: sg-e-dx.martinas.shop, port: 28624, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇯🇵 日本A, server: jp-a.martinas.shop, port: 40526, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇯🇵 日本B, server: jp-zfe.ciyy-2022.top, port: 45503, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇯🇵 日本C, server: jp-iepl.martinas.shop, port: 28610, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
@@ -59,23 +51,15 @@ proxies:
   - {name: 🇩🇪 德国, server: cmicn2.tw-77.goodp.cc, port: 10053, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇲🇾 ☪️ 马来西亚, server: malaixiya.martinas.shop, port: 28623, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇦🇺 澳大利亚, server: aozhou.ciyy-2022.top, port: 28620, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇦🇹 ️ 维也纳, server: taiwan-dns.cc.goodp.cc, port: 10054, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇫🇮 ☃️ 芬兰, server: hujp-zf.ciyy-2022.top, port: 28621, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇹🇷 土耳其, server: turkey.martinas.shop, port: 28629, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
-  - {name: 🇳🇴 挪威, server: nuowei.martinas.shop, port: 28630, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🇭🇰 香港 » udpn游戏专线 6x
       - 🇭🇰 香港 » 莞港游戏专线 6x
       - 🇭🇰 香港 » 广港游戏专线 6x
       - 🇯🇵 日本 » 沪日游戏专线 6x
-      - 🇯🇵 日本 » udpn游戏专线 6x
-      - 🇯🇵 日本 » udpn专线 6x
-      - 🇭🇰 香港 » udpn专线 6x
-      - 🇸🇬 新加坡 » iplc专线 6x
-      - 🇨🇳 台湾 » udpn专线 6x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -84,7 +68,7 @@ proxy-groups:
       - 🇭🇰 香港F
       - 🇭🇰 香港G
       - 🇭🇰 香港H
-      - 🇭🇰 香港I » HKT家宽
+      - 🇭🇰 香港I
       - 🇨🇳 台湾A
       - 🇨🇳 台湾B
       - 🇨🇳 台湾C
@@ -92,7 +76,6 @@ proxy-groups:
       - 🇸🇬 新加坡B
       - 🇸🇬 新加坡C
       - 🇸🇬 新加坡D
-      - 🇸🇬 新加坡E
       - 🇯🇵 日本A
       - 🇯🇵 日本B
       - 🇯🇵 日本C
@@ -110,10 +93,8 @@ proxy-groups:
       - 🇩🇪 德国
       - 🇲🇾 ☪️ 马来西亚
       - 🇦🇺 澳大利亚
-      - 🇦🇹 ️ 维也纳
       - 🇫🇮 ☃️ 芬兰
       - 🇹🇷 土耳其
-      - 🇳🇴 挪威
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -201,10 +182,8 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港 » udpn游戏专线 6x
       - 🇭🇰 香港 » 莞港游戏专线 6x
       - 🇭🇰 香港 » 广港游戏专线 6x
-      - 🇭🇰 香港 » udpn专线 6x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -213,13 +192,11 @@ proxy-groups:
       - 🇭🇰 香港F
       - 🇭🇰 香港G
       - 🇭🇰 香港H
-      - 🇭🇰 香港I » HKT家宽
+      - 🇭🇰 香港I
   - name: 🇯🇵 日本节点
     type: select
     proxies:
       - 🇯🇵 日本 » 沪日游戏专线 6x
-      - 🇯🇵 日本 » udpn游戏专线 6x
-      - 🇯🇵 日本 » udpn专线 6x
       - 🇯🇵 日本A
       - 🇯🇵 日本B
       - 🇯🇵 日本C
@@ -235,19 +212,16 @@ proxy-groups:
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - 🇨🇳 台湾 » udpn专线 6x
       - 🇨🇳 台湾A
       - 🇨🇳 台湾B
       - 🇨🇳 台湾C
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - 🇸🇬 新加坡 » iplc专线 6x
       - 🇸🇬 新加坡A
       - 🇸🇬 新加坡B
       - 🇸🇬 新加坡C
       - 🇸🇬 新加坡D
-      - 🇸🇬 新加坡E
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
@@ -2062,6 +2036,7 @@ rules:
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
  - DOMAIN-KEYWORD,openai,💬 OpenAi
  - DOMAIN-SUFFIX,ai.com,💬 OpenAi
+ - DOMAIN-SUFFIX,bard.google.com,💬 OpenAi
  - DOMAIN-SUFFIX,auth0.com,💬 OpenAi
  - DOMAIN-SUFFIX,challenges.cloudflare.com,💬 OpenAi
  - DOMAIN-SUFFIX,client-api.arkoselabs.com,💬 OpenAi
