@@ -27,30 +27,44 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: 距离下次重置剩余：21 天
+  - name: 距离下次重置剩余：12 天
     server: 0.0.0.0
     port: 10000
     type: trojan
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     sni: 0.0.0.0
     udp: true
-  - name: 🇭🇰 香港 » 莞港游戏专线 6x
-    server: lpic-cmi-hk01.goodp.cc
+  - name: 🇭🇰 Hong Kong » 游戏专线A 5x
+    server: udpniplc.dearyour.top
+    port: 30013
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
+    udp: true
+  - name: 🇭🇰 Hong Kong » 游戏专线B 5x
+    server: udpniplc.dearyour.top
     port: 30010
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇭🇰 香港 » 广港游戏专线 6x
+  - name: 🇭🇰 Hong Kong » 广港专线 5x
     server: node0516.onenode.top
     port: 24007
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇯🇵 日本 » 沪日游戏专线 6x
+  - name: 🇯🇵 Japan » 沪日专线 5x
     server: lpic-cmi-jp01.goodp.cc
     port: 30013
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
+    udp: true
+  - name: 🇸🇬 Singapore » 游戏专线 5x
+    server: lpic-cmi-hk02.goodp.cc
+    port: 30011
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
@@ -311,9 +325,11 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🇭🇰 香港 » 莞港游戏专线 6x
-      - 🇭🇰 香港 » 广港游戏专线 6x
-      - 🇯🇵 日本 » 沪日游戏专线 6x
+      - 🇭🇰 Hong Kong » 游戏专线A 5x
+      - 🇭🇰 Hong Kong » 游戏专线B 5x
+      - 🇭🇰 Hong Kong » 广港专线 5x
+      - 🇯🇵 Japan » 沪日专线 5x
+      - 🇸🇬 Singapore » 游戏专线 5x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -448,8 +464,9 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港 » 莞港游戏专线 6x
-      - 🇭🇰 香港 » 广港游戏专线 6x
+      - 🇭🇰 Hong Kong » 游戏专线A 5x
+      - 🇭🇰 Hong Kong » 游戏专线B 5x
+      - 🇭🇰 Hong Kong » 广港专线 5x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -462,7 +479,7 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - 🇯🇵 日本 » 沪日游戏专线 6x
+      - 🇯🇵 Japan » 沪日专线 5x
       - 🇯🇵 日本A
       - 🇯🇵 日本B
       - 🇯🇵 日本C
@@ -484,6 +501,7 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
+      - 🇸🇬 Singapore » 游戏专线 5x
       - 🇸🇬 新加坡A
       - 🇸🇬 新加坡B
       - 🇸🇬 新加坡C
@@ -2304,6 +2322,7 @@ rules:
   - DOMAIN-KEYWORD,openai,💬 OpenAi
   - DOMAIN-SUFFIX,ai.com,💬 OpenAi
   - DOMAIN-SUFFIX,bard.google.com,💬 OpenAi
+  - DOMAIN-SUFFIX,claude.ai,💬 OpenAi
   - DOMAIN-SUFFIX,auth0.com,💬 OpenAi
   - DOMAIN-SUFFIX,challenges.cloudflare.com,💬 OpenAi
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,💬 OpenAi
