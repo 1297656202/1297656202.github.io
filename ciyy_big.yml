@@ -5,7 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 距离下次重置剩余：26 天, server: 0.0.0.0, port: 10000, type: trojan, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, sni: 0.0.0.0, udp: true}
   - {name: "🇭🇰 ? Hong Kong » 深港专线 10x", server: node0805-1.onenode.top, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: "🇭🇰 ? Hong Kong » 广港专线 10x", server: node0805-1.onenode.top, port: 24007, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
   - {name: 🇭🇰 香港A, server: hrsh-55zf.martinas.shop, port: 34486, type: ss, cipher: chacha20-ietf-poly1305, password: 7bf92611-c7c3-4e61-9186-782616f4dbc4, udp: true}
