@@ -1,279 +1,243 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
-bind-address: "*"
-mode: rule
+mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
 proxies:
-  - name: 距离下次重置剩余：26 天
+  - name: 距离下次重置剩余：25 天
     server: 0.0.0.0
     port: 10000
     type: trojan
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     sni: 0.0.0.0
     udp: true
-  - name: 🇭🇰 ? Hong Kong » 深港专线 10x
-    server: node0805-1.onenode.top
-    port: 30010
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
-    udp: true
-  - name: 🇭🇰 ? Hong Kong » 广港专线 10x
-    server: node0805-1.onenode.top
-    port: 24007
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
-    udp: true
   - name: 🇭🇰 香港A
-    server: hrsh-55zf.martinas.shop
+    server: hktsp01.ciyynodegroup.cyou
     port: 34486
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港B
-    server: hkb.martinas.shop
+    server: hkb.ciyynodegroup.cyou
     port: 20220
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港C
-    server: gg3.martinas.shop
+    server: hktsp02.ciyynodegroup.cyou
     port: 20230
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港D
-    server: hkd-iepl.martinas.shop
+    server: hkd.ciyynodegroup.cyou
     port: 28609
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港E
-    server: hkzf-f.martinas.shop
+    server: hke.ciyynodegroup.cyou
     port: 45223
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港F
-    server: hk-g.ciyy-2022.top
+    server: hkf.ciyynodegroup.cyou
     port: 35224
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港G
-    server: hg.martinas.shop
+    server: hkg.ciyynodegroup.cyou
     port: 28612
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港H
-    server: azhk-zf02.ciyy-2022.top
+    server: hkh.ciyynodegroup.cyou
     port: 38604
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 香港I
-    server: hkt-k.goodp.top
+    server: hki.ciyynodegroup.cyou
     port: 10056
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇲🇴 澳门A
-    server: lpic-cmi-hk04.goodp.cc
+    server: mcao.ciyynodegroup.cyou
     port: 30015
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇨🇳 台湾A
-    server: taiwana-gg55zf.martinas.shop
+    server: wan01.ciyynodegroup.cyou
     port: 10051
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇨🇳 台湾B
-    server: taiwan-zf.ciyy-2022.top
+    server: wan02.ciyynodegroup.cyou
     port: 10052
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇨🇳 台湾C
-    server: tw-d.martinas.shop
+    server: wan03.ciyynodegroup.cyou
     port: 30032
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇸🇬 新加坡A
-    server: oracle-zfsg-a.ciyy-2022.top
+    server: sg01.ciyynodegroup.cyou
     port: 45412
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇸🇬 新加坡B
-    server: sg01.dearyour.top
+    server: sg02.ciyynodegroup.cyou
     port: 45413
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇸🇬 新加坡C
-    server: wanjp-55zf.martinas.shop
+    server: sg03.ciyynodegroup.cyou
     port: 28602
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇸🇬 新加坡D
-    server: sgc-iepl.martinas.shop
+    server: sg04.ciyynodegroup.cyou
     port: 28608
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇸🇬 新加坡E
-    server: sg02.martinas.shop
+    server: sg05.ciyynodegroup.cyou
     port: 28624
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本A
-    server: jp-a.martinas.shop
+    server: jpa.ciyynodegroup.cyou
     port: 40526
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本B
-    server: jp-01.ciyy-2022.top
+    server: jpb.ciyynodegroup.cyou
     port: 45503
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本C
-    server: jp-iepl.martinas.shop
+    server: jpc.ciyynodegroup.cyou
     port: 28610
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本D
-    server: jp-02.ciyy-2022.top
+    server: jpd.ciyynodegroup.cyou
     port: 45502
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本E
-    server: jp-e.dearyour.top
+    server: jpe.ciyynodegroup.cyou
     port: 28621
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇯🇵 日本F
-    server: game-a.goodp.cc
+    server: jpf.ciyynodegroup.cyou
     port: 30027
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇰🇷 韩国A
-    server: kr-a.ciyy-2022.top
+    server: kr-a.ciyynodegroup.cyou
     port: 28605
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇰🇷 韩国B
-    server: korea-b.martinas.shop
+    server: kr-b.ciyynodegroup.cyou
     port: 16053
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇰🇷 韩国C
-    server: korea-d.martinas.shop
+    server: kr-c.ciyynodegroup.cyou
     port: 16054
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇺🇸 美国A
-    server: usaa-55zf.martinas.shop
+  - name: 🇺🇲 美国A
+    server: us-a.ciyynodegroup.cyou
     port: 20400
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇺🇸 美国B
-    server: us-c.martinas.shop
+  - name: 🇺🇲 美国B
+    server: us-b.ciyynodegroup.cyou
     port: 44350
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇺🇸 美国C
-    server: us-e.martinas.shop
+  - name: 🇺🇲 美国C
+    server: us-c.ciyynodegroup.cyou
     port: 30228
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇫🇷 ⚜ 法国
-    server: ukn.martinas.shop
+    server: falanxi.ciyynodegroup.cyou
     port: 28606
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇬🇧 英国
-    server: ukbill.goodp.cc
+    server: ukbill.ciyynodegroup.cyou
     port: 20012
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇮🇳 印度
-    server: indu.martinas.shop
+    server: indu.ciyynodegroup.cyou
     port: 33033
     type: ss
     cipher: chacha20-ietf-poly1305
@@ -286,7 +250,7 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
-  - name: 🇳🇴 挪威
+  - name: 挪威
     server: nuowei.martinas.shop
     port: 28630
     type: ss
@@ -301,21 +265,21 @@ proxies:
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇲🇾 ☪️ 马来西亚
-    server: malaixiya.martinas.shop
+    server: malaixiya.ciyynodegroup.cyou
     port: 28623
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇦🇺 澳大利亚
-    server: aozhou.ciyy-2022.top
+    server: aozhou.ciyynodegroup.cyou
     port: 28620
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇦🇷 阿根廷
-    server: taiwan-dns.cc.goodp.cc
+    server: agt.ciyynodegroup.cyou
     port: 10054
     type: ss
     cipher: chacha20-ietf-poly1305
@@ -329,7 +293,7 @@ proxies:
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
     udp: true
   - name: 🇭🇰 Hong Kong » Trojan
-    server: udp01.dearyour.top
+    server: hkudp.ciyynodegroup.cyou
     port: 33034
     type: trojan
     password: 7bf92611-c7c3-4e61-9186-782616f4dbc4
@@ -340,8 +304,6 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🇭🇰 ? Hong Kong » 深港专线 10x
-      - 🇭🇰 ? Hong Kong » 广港专线 10x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -369,14 +331,14 @@ proxy-groups:
       - 🇰🇷 韩国A
       - 🇰🇷 韩国B
       - 🇰🇷 韩国C
-      - 🇺🇸 美国A
-      - 🇺🇸 美国B
-      - 🇺🇸 美国C
+      - 🇺🇲 美国A
+      - 🇺🇲 美国B
+      - 🇺🇲 美国C
       - 🇫🇷 ⚜ 法国
       - 🇬🇧 英国
       - 🇮🇳 印度
       - 🇩🇪 德国
-      - 🇳🇴 挪威
+      - 挪威
       - 🇷🇺 俄罗斯
       - 🇲🇾 ☪️ 马来西亚
       - 🇦🇺 澳大利亚
@@ -492,8 +454,6 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 ? Hong Kong » 深港专线 10x
-      - 🇭🇰 ? Hong Kong » 广港专线 10x
       - 🇭🇰 香港A
       - 🇭🇰 香港B
       - 🇭🇰 香港C
@@ -516,9 +476,9 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - 🇺🇸 美国A
-      - 🇺🇸 美国B
-      - 🇺🇸 美国C
+      - 🇺🇲 美国A
+      - 🇺🇲 美国B
+      - 🇺🇲 美国C
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
