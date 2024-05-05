@@ -5,294 +5,46 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 距离下次重置剩余：19 天
-    server: 0.0.0.0
-    port: 10000
-    type: trojan
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    sni: 0.0.0.0
-    udp: true
-  - name: 🇭🇰 香港A
-    server: hktsp01.ciyynodegroup.cyou
-    port: 34486
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港B
-    server: hkb.ciyynodegroup.cyou
-    port: 20220
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港C
-    server: hktsp02.ciyynodegroup.cyou
-    port: 20230
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港D
-    server: hkd.ciyynodegroup.cyou
-    port: 28609
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港E
-    server: hke.ciyynodegroup.cyou
-    port: 45223
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港F
-    server: hkf.ciyynodegroup.cyou
-    port: 35224
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港G
-    server: hkg.ciyynodegroup.cyou
-    port: 28612
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港H
-    server: hkh.ciyynodegroup.cyou
-    port: 38604
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 香港I
-    server: hki.ciyynodegroup.cyou
-    port: 10056
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇲🇴 澳门A
-    server: mcao.ciyynodegroup.cyou
-    port: 30015
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇨🇳 台湾A
-    server: wan01.ciyynodegroup.cyou
-    port: 10051
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇨🇳 台湾B
-    server: wan02.ciyynodegroup.cyou
-    port: 10052
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇨🇳 台湾C
-    server: wan03.ciyynodegroup.cyou
-    port: 30032
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇸🇬 新加坡A
-    server: sg01.ciyynodegroup.cyou
-    port: 45412
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇸🇬 新加坡B
-    server: sg02.ciyynodegroup.cyou
-    port: 45413
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇸🇬 新加坡C
-    server: sg03.ciyynodegroup.cyou
-    port: 28602
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇸🇬 新加坡D
-    server: sg04.ciyynodegroup.cyou
-    port: 28608
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇸🇬 新加坡E
-    server: sg05.ciyynodegroup.cyou
-    port: 28624
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本A
-    server: jpa.ciyynodegroup.cyou
-    port: 40526
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本B
-    server: jpb.ciyynodegroup.cyou
-    port: 45503
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本C
-    server: jpc.ciyynodegroup.cyou
-    port: 28610
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本D
-    server: jpd.ciyynodegroup.cyou
-    port: 45502
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本E
-    server: jpe.ciyynodegroup.cyou
-    port: 28621
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇯🇵 日本F
-    server: jpf.ciyynodegroup.cyou
-    port: 30027
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇰🇷 韩国A
-    server: kr-a.ciyynodegroup.cyou
-    port: 28605
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇰🇷 韩国B
-    server: kr-b.ciyynodegroup.cyou
-    port: 16053
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇰🇷 韩国C
-    server: kr-c.ciyynodegroup.cyou
-    port: 16054
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇺🇲 美国A
-    server: us-a.ciyynodegroup.cyou
-    port: 20400
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇺🇲 美国B
-    server: us-b.ciyynodegroup.cyou
-    port: 44350
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇺🇲 美国C
-    server: us-c.ciyynodegroup.cyou
-    port: 30228
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇫🇷 ⚜ 法国
-    server: falanxi.ciyynodegroup.cyou
-    port: 28606
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇬🇧 英国
-    server: ukbill.ciyynodegroup.cyou
-    port: 20012
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇮🇳 印度
-    server: indu.ciyynodegroup.cyou
-    port: 33033
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇩🇪 德国
-    server: cmicn2.tw-77.goodp.cc
-    port: 10053
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 挪威
-    server: nuowei.martinas.shop
-    port: 28630
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇷🇺 俄罗斯
-    server: rus.ciyy-2022.top
-    port: 28614
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇲🇾 ☪️ 马来西亚
-    server: malaixiya.ciyynodegroup.cyou
-    port: 28623
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇦🇷 阿根廷
-    server: agt.ciyynodegroup.cyou
-    port: 10054
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇹🇷 土耳其
-    server: turkey.martinas.shop
-    port: 28629
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    udp: true
-  - name: 🇭🇰 Hong Kong » Trojan
-    server: hkudp.ciyynodegroup.cyou
-    port: 33034
-    type: trojan
-    password: 2b047732-424a-4a11-9303-2a760034e390
-    sni: udp01.dearyour.top
-    skip-cert-verify: true
-    udp: true
+  - {name: 🇭🇰 香港A, server: hk01.cylink.bond, port: 34486, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港B, server: hk02.cylink.bond, port: 20220, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港C, server: hk03.cylink.bond, port: 20230, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港D, server: hk04.cylink.bond, port: 28609, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港E, server: hk05.cylink.bond, port: 45223, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港F, server: hk06.cylink.bond, port: 35224, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港G, server: hk07.cylink.bond, port: 38604, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港H, server: hk08.cylink.bond, port: 10056, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 香港I, server: hk09.cylink.bond, port: 28612, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇲🇴 澳门A, server: macao.dearyou.one, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇨🇳 台湾A, server: pineapple01.dearyou.one, port: 10051, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇨🇳 台湾B, server: pineapple02.dearyou.one, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇨🇳 台湾C, server: pineapple02.dearyou.one, port: 30032, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇨🇳 台湾D, server: pineapple01.dearyou.one, port: 30033, type: ss, cipher: aes-128-gcm, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇸🇬 新加坡A, server: sglion01.ciyynode.cloud, port: 45414, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇸🇬 新加坡B, server: sglion02.ciyynode.cloud, port: 45413, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇸🇬 新加坡C, server: sglion03.ciyynode.cloud, port: 28608, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇸🇬 新加坡D, server: sglion02.ciyynode.cloud, port: 28624, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇯🇵 日本A, server: jpa.ciyynodegroup.cyou, port: 40526, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇯🇵 日本B, server: jpb.ciyynodegroup.cyou, port: 45503, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇯🇵 日本C, server: jpc.ciyynodegroup.cyou, port: 28610, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇯🇵 日本D, server: jpe.ciyynodegroup.cyou, port: 28621, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇯🇵 日本E, server: jpf.ciyynodegroup.cyou, port: 30027, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇰🇷 韩国A, server: kr-a.dearyou.cyou, port: 16053, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇰🇷 韩国B, server: kr-b.dearyou.cyou, port: 16054, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇺🇲 美国A, server: us-a.ciyynodegroup.cyou, port: 20400, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇺🇲 美国B, server: us-b.ciyynodegroup.cyou, port: 44350, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇺🇲 美国C, server: us-c.dearyou.cyou, port: 30228, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇫🇷 ⚜ 法国, server: falanxi.ciyynodegroup.cyou, port: 28606, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇬🇧 英国, server: ukbill.ciyynodegroup.cyou, port: 20012, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇩🇪 德国, server: de.dearyou.one, port: 10053, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 挪威, server: nuowei.martinas.shop, port: 28630, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: rus.ciyynodegroup.cyou, port: 28614, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇮🇳 印度, server: indu.dearyou.one, port: 33033, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇲🇾 ☪️ 马来西亚, server: malaxiya.martinas.shop, port: 28623, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇹🇭 泰国, server: thh.martinas.shop, port: 28631, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇻🇳 ☕ 越南, server: vnn.martinas.shop, port: 28632, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇦🇺 澳大利亚, server: aozz.martinas.shop, port: 28620, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇹🇷 土耳其, server: turkey.martinas.shop, port: 28629, type: ss, cipher: chacha20-ietf-poly1305, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, udp: true}
+  - {name: 🇭🇰 Hong Kong » Trojan, server: hktro.cylink.bond, port: 33034, type: trojan, password: cd0bd2a6-9eb3-4059-aef0-67e7a7945ee0, sni: udp01-hkg.goodp.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -310,31 +62,31 @@ proxy-groups:
       - 🇨🇳 台湾A
       - 🇨🇳 台湾B
       - 🇨🇳 台湾C
+      - 🇨🇳 台湾D
       - 🇸🇬 新加坡A
       - 🇸🇬 新加坡B
       - 🇸🇬 新加坡C
       - 🇸🇬 新加坡D
-      - 🇸🇬 新加坡E
       - 🇯🇵 日本A
       - 🇯🇵 日本B
       - 🇯🇵 日本C
       - 🇯🇵 日本D
       - 🇯🇵 日本E
-      - 🇯🇵 日本F
       - 🇰🇷 韩国A
       - 🇰🇷 韩国B
-      - 🇰🇷 韩国C
       - 🇺🇲 美国A
       - 🇺🇲 美国B
       - 🇺🇲 美国C
       - 🇫🇷 ⚜ 法国
       - 🇬🇧 英国
-      - 🇮🇳 印度
       - 🇩🇪 德国
       - 挪威
       - 🇷🇺 俄罗斯
+      - 🇮🇳 印度
       - 🇲🇾 ☪️ 马来西亚
-      - 🇦🇷 阿根廷
+      - 🇹🇭 泰国
+      - 🇻🇳 ☕ 越南
+      - 🇦🇺 澳大利亚
       - 🇹🇷 土耳其
       - 🇭🇰 Hong Kong » Trojan
       - 🇭🇰 香港节点
@@ -464,7 +216,6 @@ proxy-groups:
       - 🇯🇵 日本C
       - 🇯🇵 日本D
       - 🇯🇵 日本E
-      - 🇯🇵 日本F
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -477,6 +228,7 @@ proxy-groups:
       - 🇨🇳 台湾A
       - 🇨🇳 台湾B
       - 🇨🇳 台湾C
+      - 🇨🇳 台湾D
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
@@ -484,13 +236,11 @@ proxy-groups:
       - 🇸🇬 新加坡B
       - 🇸🇬 新加坡C
       - 🇸🇬 新加坡D
-      - 🇸🇬 新加坡E
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
       - 🇰🇷 韩国A
       - 🇰🇷 韩国B
-      - 🇰🇷 韩国C
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -963,6 +713,7 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 广告拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 广告拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 广告拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 广告拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 广告拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 广告拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 广告拦截
@@ -2396,6 +2147,10 @@ rules:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,💬 OpenAi
   - DOMAIN-SUFFIX,sentry.io,💬 OpenAi
   - DOMAIN-SUFFIX,stripe.com,💬 OpenAi
+  - DOMAIN-SUFFIX,cdn.oaistatic.com,💬 OpenAi
+  - DOMAIN-SUFFIX,claude.ai,💬 OpenAi
+  - DOMAIN-SUFFIX,bard.google.com,💬 OpenAi
+  - DOMAIN-SUFFIX,gemini.google.com,💬 OpenAi
   - DOMAIN-SUFFIX,epicgames.com,🎮 游戏平台
   - DOMAIN-SUFFIX,epicgames.dev,🎮 游戏平台
   - DOMAIN-SUFFIX,helpshift.com,🎮 游戏平台
@@ -2511,6 +2266,7 @@ rules:
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -2963,6 +2719,7 @@ rules:
   - DOMAIN-SUFFIX,backchina.com,🚀 节点选择
   - DOMAIN-SUFFIX,backpackers.com.tw,🚀 节点选择
   - DOMAIN-SUFFIX,backtotiananmen.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bad.news,🚀 节点选择
   - DOMAIN-SUFFIX,badiucao.com,🚀 节点选择
   - DOMAIN-SUFFIX,badjojo.com,🚀 节点选择
   - DOMAIN-SUFFIX,badoo.com,🚀 节点选择
@@ -3249,6 +3006,7 @@ rules:
   - DOMAIN-SUFFIX,caijinglengyan.com,🚀 节点选择
   - DOMAIN-SUFFIX,calameo.com,🚀 节点选择
   - DOMAIN-SUFFIX,calebelston.com,🚀 节点选择
+  - DOMAIN-SUFFIX,calendarz.com,🚀 节点选择
   - DOMAIN-SUFFIX,calgarychinese.ca,🚀 节点选择
   - DOMAIN-SUFFIX,calgarychinese.com,🚀 节点选择
   - DOMAIN-SUFFIX,calgarychinese.net,🚀 节点选择
@@ -3318,6 +3076,7 @@ rules:
   - DOMAIN-SUFFIX,cdef.org,🚀 节点选择
   - DOMAIN-SUFFIX,cdig.info,🚀 节点选择
   - DOMAIN-SUFFIX,cdjp.org,🚀 节点选择
+  - DOMAIN-SUFFIX,cdn-telegram.org,🚀 节点选择
   - DOMAIN-SUFFIX,cdnews.com.tw,🚀 节点选择
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,cdp1989.org,🚀 节点选择
@@ -3546,6 +3305,7 @@ rules:
   - DOMAIN-SUFFIX,comic-mega.me,🚀 节点选择
   - DOMAIN-SUFFIX,comico.tw,🚀 节点选择
   - DOMAIN-SUFFIX,commandarms.com,🚀 节点选择
+  - DOMAIN-SUFFIX,comments.app,🚀 节点选择
   - DOMAIN-SUFFIX,commentshk.com,🚀 节点选择
   - DOMAIN-SUFFIX,communistcrimes.org,🚀 节点选择
   - DOMAIN-SUFFIX,communitychoicecu.com,🚀 节点选择
@@ -4398,6 +4158,7 @@ rules:
   - DOMAIN-SUFFIX,geekheart.info,🚀 节点选择
   - DOMAIN-SUFFIX,gekikame.com,🚀 节点选择
   - DOMAIN-SUFFIX,gelbooru.com,🚀 节点选择
+  - DOMAIN-SUFFIX,generated.photos,🚀 节点选择
   - DOMAIN-SUFFIX,genius.com,🚀 节点选择
   - DOMAIN-SUFFIX,geocities.co.jp,🚀 节点选择
   - DOMAIN-SUFFIX,geocities.com,🚀 节点选择
@@ -4771,10 +4532,10 @@ rules:
   - DOMAIN-SUFFIX,grammaly.com,🚀 节点选择
   - DOMAIN-SUFFIX,grandtrial.org,🚀 节点选择
   - DOMAIN-SUFFIX,grangorz.org,🚀 节点选择
+  - DOMAIN-SUFFIX,graph.org,🚀 节点选择
   - DOMAIN-SUFFIX,graphis.ne.jp,🚀 节点选择
   - DOMAIN-SUFFIX,graphql.org,🚀 节点选择
   - DOMAIN-SUFFIX,gravatar.com,🚀 节点选择
-  - DOMAIN-SUFFIX,greasespot.net,🚀 节点选择
   - DOMAIN-SUFFIX,great-firewall.com,🚀 节点选择
   - DOMAIN-SUFFIX,great-roc.org,🚀 节点选择
   - DOMAIN-SUFFIX,greatfire.org,🚀 节点选择
@@ -5064,6 +4825,8 @@ rules:
   - DOMAIN-SUFFIX,hudatoriq.web.id,🚀 节点选择
   - DOMAIN-SUFFIX,hudson.org,🚀 节点选择
   - DOMAIN-SUFFIX,huffingtonpost.com,🚀 节点选择
+  - DOMAIN-SUFFIX,huffpost.com,🚀 节点选择
+  - DOMAIN-SUFFIX,huggingface.co,🚀 节点选择
   - DOMAIN-SUFFIX,hugoroy.eu,🚀 节点选择
   - DOMAIN-SUFFIX,huhaitai.com,🚀 节点选择
   - DOMAIN-SUFFIX,huhamhire.com,🚀 节点选择
@@ -5197,6 +4960,7 @@ rules:
   - DOMAIN-SUFFIX,info-graf.fr,🚀 节点选择
   - DOMAIN-SUFFIX,informer.com,🚀 节点选择
   - DOMAIN-SUFFIX,initiativesforchina.org,🚀 节点选择
+  - DOMAIN-SUFFIX,inkbunny.net,🚀 节点选择
   - DOMAIN-SUFFIX,inkui.com,🚀 节点选择
   - DOMAIN-SUFFIX,inmediahk.net,🚀 节点选择
   - DOMAIN-SUFFIX,innermongolia.org,🚀 节点选择
@@ -5718,6 +5482,7 @@ rules:
   - DOMAIN-SUFFIX,matrix.org,🚀 节点选择
   - DOMAIN-SUFFIX,matsushimakaede.com,🚀 节点选择
   - DOMAIN-SUFFIX,matters.news,🚀 节点选择
+  - DOMAIN-SUFFIX,matters.town,🚀 节点选择
   - DOMAIN-SUFFIX,mattwilcox.net,🚀 节点选择
   - DOMAIN-SUFFIX,maturejp.com,🚀 节点选择
   - DOMAIN-SUFFIX,maxing.jp,🚀 节点选择
@@ -6211,6 +5976,7 @@ rules:
   - DOMAIN-SUFFIX,oauth.net,🚀 节点选择
   - DOMAIN-SUFFIX,observechina.net,🚀 节点选择
   - DOMAIN-SUFFIX,obutu.com,🚀 节点选择
+  - DOMAIN-SUFFIX,obyte.org,🚀 节点选择
   - DOMAIN-SUFFIX,ocaspro.com,🚀 节点选择
   - DOMAIN-SUFFIX,occupytiananmen.com,🚀 节点选择
   - DOMAIN-SUFFIX,oclp.hk,🚀 节点选择
@@ -6576,6 +6342,7 @@ rules:
   - DOMAIN-SUFFIX,psiphon.ca,🚀 节点选择
   - DOMAIN-SUFFIX,psiphon3.com,🚀 节点选择
   - DOMAIN-SUFFIX,psiphontoday.com,🚀 节点选择
+  - DOMAIN-SUFFIX,pstatic.net,🚀 节点选择
   - DOMAIN-SUFFIX,pt.im,🚀 节点选择
   - DOMAIN-SUFFIX,pts.org.tw,🚀 节点选择
   - DOMAIN-SUFFIX,ptt.cc,🚀 节点选择
@@ -6634,6 +6401,7 @@ rules:
   - DOMAIN-SUFFIX,questvisual.com,🚀 节点选择
   - DOMAIN-SUFFIX,quitccp.net,🚀 节点选择
   - DOMAIN-SUFFIX,quitccp.org,🚀 节点选择
+  - DOMAIN-SUFFIX,quiz.directory,🚀 节点选择
   - DOMAIN-SUFFIX,quora.com,🚀 节点选择
   - DOMAIN-SUFFIX,quoracdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,quran.com,🚀 节点选择
@@ -7332,9 +7100,11 @@ rules:
   - DOMAIN-SUFFIX,tehrantimes.com,🚀 节点选择
   - DOMAIN-SUFFIX,telecomspace.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram-cdn.org,🚀 节点选择
   - DOMAIN-SUFFIX,telegram.dog,🚀 节点选择
   - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
   - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.space,🚀 节点选择
   - DOMAIN-SUFFIX,telegramdownload.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegraph.co.uk,🚀 节点选择
   - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
@@ -7403,6 +7173,7 @@ rules:
   - DOMAIN-SUFFIX,thomasbernhard.org,🚀 节点选择
   - DOMAIN-SUFFIX,thongdreams.com,🚀 节点选择
   - DOMAIN-SUFFIX,threadreaderapp.com,🚀 节点选择
+  - DOMAIN-SUFFIX,threads.net,🚀 节点选择
   - DOMAIN-SUFFIX,threatchaos.com,🚀 节点选择
   - DOMAIN-SUFFIX,throughnightsfire.com,🚀 节点选择
   - DOMAIN-SUFFIX,thumbzilla.com,🚀 节点选择
@@ -8029,6 +7800,7 @@ rules:
   - DOMAIN-SUFFIX,wav.tv,🚀 节点选择
   - DOMAIN-SUFFIX,waveprotocol.org,🚀 节点选择
   - DOMAIN-SUFFIX,waymo.com,🚀 节点选择
+  - DOMAIN-SUFFIX,wd.bible,🚀 节点选择
   - DOMAIN-SUFFIX,wda.gov.tw,🚀 节点选择
   - DOMAIN-SUFFIX,wdf5.com,🚀 节点选择
   - DOMAIN-SUFFIX,wealth.com.tw,🚀 节点选择
@@ -8144,12 +7916,12 @@ rules:
   - DOMAIN-SUFFIX,witopia.net,🚀 节点选择
   - DOMAIN-SUFFIX,wizcrafts.net,🚀 节点选择
   - DOMAIN-SUFFIX,wjbk.org,🚀 节点选择
+  - DOMAIN-SUFFIX,wmflabs.org,🚀 节点选择
   - DOMAIN-SUFFIX,wn.com,🚀 节点选择
   - DOMAIN-SUFFIX,wnacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,wnacg.org,🚀 节点选择
   - DOMAIN-SUFFIX,wo.tc,🚀 节点选择
   - DOMAIN-SUFFIX,woeser.com,🚀 节点选择
-  - DOMAIN-SUFFIX,woesermiddle-way.net,🚀 节点选择
   - DOMAIN-SUFFIX,wokar.org,🚀 节点选择
   - DOMAIN-SUFFIX,wolfax.com,🚀 节点选择
   - DOMAIN-SUFFIX,wombo.ai,🚀 节点选择
@@ -8307,6 +8079,7 @@ rules:
   - DOMAIN-SUFFIX,yam.org.tw,🚀 节点选择
   - DOMAIN-SUFFIX,yande.re,🚀 节点选择
   - DOMAIN-SUFFIX,yandex.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yandex.ru,🚀 节点选择
   - DOMAIN-SUFFIX,yanghengjun.com,🚀 节点选择
   - DOMAIN-SUFFIX,yangjianli.com,🚀 节点选择
   - DOMAIN-SUFFIX,yasni.co.uk,🚀 节点选择
@@ -8649,6 +8422,7 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -8745,6 +8519,7 @@ rules:
   - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
   - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
   - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
@@ -8795,6 +8570,7 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
+  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -8834,6 +8610,8 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
+  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -9121,6 +8899,7 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -9329,6 +9108,7 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
