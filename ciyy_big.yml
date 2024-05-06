@@ -2135,6 +2135,7 @@ rules:
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,openai,💬 OpenAi
+  - DOMAIN-SUFFIX,chatgpt.com,💬 OpenAi
   - DOMAIN-SUFFIX,auth0.com,💬 OpenAi
   - DOMAIN-SUFFIX,challenges.cloudflare.com,💬 OpenAi
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,💬 OpenAi
