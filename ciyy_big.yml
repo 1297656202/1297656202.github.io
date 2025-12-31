@@ -4,46 +4,46 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 网址：https://ciyydoor.men, server: 89.213.230.16, port: 405, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 回家之路：ciyy.ink, server: 89.213.230.16, port: 405, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇭🇰 香港A, server: hka.cylink.bond, port: 34486, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hy25915, headers: {Host: www.youzan.com}}, udp: true}
-  - {name: 🇭🇰 香港B, server: hkb.cylink.bond, port: 34487, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rock2599, headers: {Host: www.youzan.com}}, udp: true}
-  - {name: 🇭🇰 香港C » HKBN 家宽, server: hkc.cylink.bond, port: 34488, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港D, server: hkd.cylink.bond, port: 34489, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hy25915, headers: {Host: www.youzan.com}}, udp: true}
-  - {name: 🇭🇰 香港E, server: hke.cylink.bond, port: 34490, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港F, server: hkf.cylink.bond, port: 34491, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hkduo, headers: {Host: www.bilibili.com}}, udp: true}
-  - {name: 🇭🇰 香港G, server: hkg.cylink.bond, port: 34492, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港H, server: hkh.cylink.bond, port: 33035, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇭🇰 香港 » 三网优化 2x, server: hktro.cylink.bond, port: 33034, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: baidu.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾A » Hinet 家宽, server: pineapple01.cylink.bond, port: 10051, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾B, server: pineapple02.cylink.bond, port: 10052, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾C » Hinet 家宽, server: pineapple02.cylink.bond, port: 30032, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾D, server: pineapple01.cylink.bond, port: 30033, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 » 三网优化 2x, server: cyw-33.cy2511.world, port: 10053, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇸🇬 新加坡A, server: cy2-dxyh.cy2511.world, port: 33038, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇸🇬 新加坡B, server: ssg.cylink.bond, port: 45413, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sgg25917, headers: {Host: www.bilibili.com}}, udp: true}
-  - {name: 🇸🇬 新加坡 C, server: cy0-gdcmlp.cy2511.world, port: 28607, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sgnnc2599, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇸🇬 新加坡 » 三网优化 2x, server: cy3-3w0l1.cy2511.world, port: 45415, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇯🇵 日本A, server: pan2511.cylink.bond, port: 45502, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jp01-2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇯🇵 日本B, server: pan2511.cylink.bond, port: 45503, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jp02-2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇯🇵 日本C » NTT 家宽, server: pan2511.cylink.bond, port: 40528, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本D, server: jpd.cylink.bond, port: 28621, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇯🇵 日本 » Yokohama 家宽, server: jpp.cylink.bond, port: 45504, type: trojan, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 » 世宗电信家宽, server: kr-isp.cylink.bond, port: 16055, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇺🇸 美国A, server: cy1-hbcuko.cy2511.world, port: 20400, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇺🇸 美国B, server: cy1-hbcuko.cy2511.world, port: 44350, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇺🇸 美国C, server: y0-xzcmlp.cy2511.world, port: 30228, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇬🇧 英国, server: u0-ukl1p.cy2511.world, port: 20012, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇫🇷 ⚜ 法国, server: cy1-hbcuko.cy2511.world, port: 28606, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇩🇪 德国, server: cy1-hbcuko.cy2511.world, port: 20155, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇷🇺 俄罗斯, server: cy1-hbcuko.cy2511.world, port: 28614, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇳🇴 挪威, server: cy1-hbcuko.cy2511.world, port: 28629, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇮🇩 印尼, server: cy4.southeast.cy2511.world, port: 28630, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇲🇾 ☪️ 马来西亚 2x, server: cy4.southeast.cy2511.world, port: 28623, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /mama2599, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇹🇭 泰国, server: cy4.southeast.cy2511.world, port: 28631, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /taitai2599, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇻🇳 ☕ 越南, server: cy4.southeast.cy2511.world, port: 28633, type: vmess, uuid: 50aa0e0c-e380-4532-8e08-83b9321029ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇻🇳 ☕ 越南 » 原生商宽, server: cy4.southeast.cy2511.world, port: 28732, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
-  - {name: 🇦🇺 澳大利亚, server: cy0-gdcmlp.cy2511.world, port: 28620, type: ss, cipher: chacha20-ietf-poly1305, password: 50aa0e0c-e380-4532-8e08-83b9321029ee, udp: true}
+  - {name: 网址：https://ciyydoor.men, server: 89.213.230.16, port: 405, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 回家之路：ciyy.ink, server: 89.213.230.16, port: 405, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇭🇰 香港A, server: hka.cylink.bond, port: 34486, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hy25915, headers: {Host: www.youzan.com}}, udp: true}
+  - {name: 🇭🇰 香港B, server: hkb.cylink.bond, port: 34487, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rock2599, headers: {Host: www.youzan.com}}, udp: true}
+  - {name: 🇭🇰 香港C » HKBN 家宽, server: hkc.cylink.bond, port: 34488, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港D, server: hkd.cylink.bond, port: 34489, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hy25915, headers: {Host: www.youzan.com}}, udp: true}
+  - {name: 🇭🇰 香港E, server: hke.cylink.bond, port: 34490, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港F, server: hkf.cylink.bond, port: 34491, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hkduo, headers: {Host: www.bilibili.com}}, udp: true}
+  - {name: 🇭🇰 香港G, server: hkg.cylink.bond, port: 34492, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港H, server: hkh.cylink.bond, port: 33035, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇭🇰 香港 » 三网优化 2x, server: hktro.cylink.bond, port: 33034, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾A » Hinet 家宽, server: pineapple01.cylink.bond, port: 10051, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾B, server: pineapple02.cylink.bond, port: 10052, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾C » Hinet 家宽, server: pineapple02.cylink.bond, port: 30032, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾D, server: pineapple01.cylink.bond, port: 30033, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾 » 三网优化 2x, server: cyw-33.cy2511.world, port: 10053, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇸🇬 新加坡A, server: cy2-dxyh.cy2511.world, port: 33038, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇸🇬 新加坡B, server: ssg.cylink.bond, port: 45413, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sgg25917, headers: {Host: www.bilibili.com}}, udp: true}
+  - {name: 🇸🇬 新加坡 C, server: cy0-gdcmlp.cy2511.world, port: 28607, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sgnnc2599, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇸🇬 新加坡 » 三网优化 2x, server: cy3-3w0l1.cy2511.world, port: 45415, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇯🇵 日本A, server: pan2511.cylink.bond, port: 45502, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jp01-2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇯🇵 日本B, server: pan2511.cylink.bond, port: 45503, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jp02-2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇯🇵 日本C » NTT 家宽, server: Sakura.cylink.bond, port: 40528, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本D, server: jpd.cylink.bond, port: 28621, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇯🇵 日本 » Yokohama 家宽, server: jpp.cylink.bond, port: 45504, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 » 世宗电信家宽, server: kr-isp.cylink.bond, port: 16055, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇺🇸 美国A, server: cy1-hbcuko.cy2511.world, port: 20400, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇺🇸 美国B, server: cy1-hbcuko.cy2511.world, port: 44350, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇺🇸 美国C, server: y0-xzcmlp.cy2511.world, port: 30228, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇬🇧 英国, server: u0-ukl1p.cy2511.world, port: 20012, type: trojan, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 ⚜ 法国, server: cy1-hbcuko.cy2511.world, port: 28606, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇩🇪 德国, server: cy1-hbcuko.cy2511.world, port: 20155, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: cy1-hbcuko.cy2511.world, port: 28614, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇳🇴 挪威, server: cy1-hbcuko.cy2511.world, port: 28629, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇮🇩 印尼, server: cy4.southeast.cy2511.world, port: 28630, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇲🇾 ☪️ 马来西亚 2x, server: cy4.southeast.cy2511.world, port: 28623, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /mama2599, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇹🇭 泰国, server: cy4.southeast.cy2511.world, port: 28631, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /taitai2599, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇻🇳 ☕ 越南, server: cy4.southeast.cy2511.world, port: 28633, type: vmess, uuid: 4b18c59f-b249-4d78-95bc-fc560a41aab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /HK2025, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 🇻🇳 ☕ 越南 » 原生商宽, server: cy4.southeast.cy2511.world, port: 28732, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
+  - {name: 🇦🇺 澳大利亚, server: cy0-gdcmlp.cy2511.world, port: 28620, type: ss, cipher: chacha20-ietf-poly1305, password: 4b18c59f-b249-4d78-95bc-fc560a41aab7, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
